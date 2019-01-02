@@ -1,6 +1,12 @@
 # SimonNetWorkingManager
+
 封装的网络请求方法
+
+
 把数据模型Model穿进去，会在方法里处理model,然后callback 传出来，直接内部处理了。不需要在vc处理。
+
+如下：
+
 __block id response = responseParameters;
     [manager POST:URLString parameters:[requestParatmeters toDictionary] progress:^(NSProgress * _Nonnull uploadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
